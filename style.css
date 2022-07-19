@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+:root{
+
+    --white: #f9f9f9ff;
+    --lightgrey: #ECECEC;
+    --mediumgrey: #a7a7a7;
+    --grey:#c4c4c4;
+    --darkgrey:#343434;
+    --black: #1D021D;
+    --blue: #1b77f3;
+    --red: #CF3C3f;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
+    padding: clamp(35px, 10%, 70px);
+    justify-content: space-between;
+
+}
+
+main{
+    display: flex;
+}
+
+.imagemDeLogin{
+    width: 130px;
+    margin-bottom: 80px;
+}
+.tituloDeLogin{
+    color: var(--darkgrey);
+    font-size: 1.5em;
+    margin-bottom: 80px;
+    
+}
+
+.rotuloDeLogin{
+width: 100%;
+display: block;
+margin-bottom: 20px;
+
+}
+
+.input{
+    width: 100%;
+    background-color: var(--lightgrey);
+    border:2px solid rgba(0, 0, 0, 0%);
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9em;
+    padding: 25px 10px 10px;
+    font-weight: 600;
+    color: var(--darkgrey)
+}
+
+.rotuloDeLogin span{
+    position: absolute;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--mediumgrey);
+    margin: 20px;
+    cursor: text;
+    transition: all 300ms ease;
+
+}
+
+.input:focus{
+background-color: var(--white);
+border: 2px solid var(--darkgrey);
+
+}
+
+.rotuloDeLogin .ativarSpan {
+font-size: 0.7em;
+margin: 8px 10px;
+
+}
+
+.iconesDeLogin{
+
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+    
+}
+
+.iconesDeLogin img {
+    width: 20px;
+}
+
+.botaoDeIcone{
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.iconesDeLogin .botaoDeIcone:nth-child(1){
+
+    background-color: var(--blue);
+}
+
+.iconesDeLogin .botaoDeIcone:nth-child(2){
+
+    background-color: var(--lightgrey);
+}
+
+.iconesDeLogin .botaoDeIcone:nth-child(3){
+
+    background-color: var(--black);
+}
+
+.rotuloDeLoginCheckbox{
+
+    width: 100%;
+    margin: 15px 0 50px;
+    font-size: 0.9em;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.inputCheckbox{
+
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: var(--lightgrey);
+    margin-right: 8px;
+    border-radius: 3px;
+}
+
+.inputCheckbox:checked{
+
+    background-color: var(--red);
+}
+
+.inputCheckbox:checked::after{
+
+    content: " \2714";
+    margin: 12px 5px;
+    size: 10px;
+}
+
+.botaoDeLogin {
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 60px;
+    background-color: var(--red);
+
+}
+
+.botaoDeLogin svg{
+
+    fill: var(--white);
+}
+
+.botaoDeLogin:disabled{
+
+    cursor: auto;
+    background-color: var(--white);
+    border: 2px solid var(--lightgrey);
+}
+
+.botaoDeLogin:disabled svg{
+
+    fill: var(--grey);
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkDeLogin {
+
+    font-size: 0.8em;
+    text-decoration: none;
+    color: var(--mediumgrey);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 700;
+    
+}
+
+.wallpaper{
+width: 100%;
+background-image: url('./images/wallpaper.jpg');
+background-size: size;
+background-position: center;
+flex: 1;
+background-repeat: no-repeat;
+}
